@@ -1,1 +1,1 @@
-javadoc -doclet ListClass -docletpath .-sourcepath -subpackages ./build/sources/src/main/java 
+javadoc -doclet ListClass -docletpath . -sourcepath ./build/sources/src/main/java -cp ./lib/* -subpackages .

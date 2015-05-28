@@ -5,8 +5,10 @@ public class ListClass {
 
 	public static boolean start(RootDoc root) 
 	{		
-		ListClass def = new ListClass();
+		
+			ListClass def = new ListClass();
 		ClassDoc[] classes = root.classes();
+		System.out.println("[");
         for (int i = 0; i < classes.length; ++i) {
     		if (i > 0)
 	            System.out.println(",");
@@ -14,13 +16,14 @@ public class ListClass {
     		def.DumpClass(classes[i]);
 
         }
+        System.out.println("]");
         return true;
 	}
 
 	void DumpClass(ClassDoc c)
 	{
-		
-		System.out.println("\"" + c.simpleTypeName() + "\" : {");
+		System.out.println("{");
+		System.out.println("\"name\" : \"" + c.simpleTypeName() + "\", ");
 		String[] namespaces = c.qualifiedTypeName().split("\\.");
 		
 		String packageName = "";
