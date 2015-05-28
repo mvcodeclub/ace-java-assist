@@ -1,0 +1,1 @@
+git clone git@github.com:Bukkit/Bukkit.git build/sources/

@@ -1,1 +1,1 @@
-javac ListClass.java
+javac -cp lib/tools.jar ListClass.java
